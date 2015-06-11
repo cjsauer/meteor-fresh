@@ -8,4 +8,5 @@ meteor-platform
 less
 
 app:layout
+app:homepage
 app:routes

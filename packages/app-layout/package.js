@@ -19,8 +19,7 @@ Package.onUse(function(api) {
   //Add your views here!
   var views = [
     'layout',
-    'navigation',
-    'home'
+    'navigation'
   ];
 
   api.addFiles('vendor/bootstrap/js/bootstrap.min.js', 'client');
