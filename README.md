@@ -14,7 +14,7 @@ You can find more information on this approach [at Mathieu Bouchard's blog post]
 
 ### app:layout
 
-This package deals with the overall look of the site. It includes its own copy of bootstrap overidden by the theme import in `theme.bootstrap.less`. Have a look at the example theme in `themes/darkly.less` to see how you can use themes to override bootstrap variables. 
+This package deals with the overall look of the site. It includes its own copy of bootstrap overidden by the theme import in `theme.bootstrap.less`. Have a look at the example theme in `themes/darkly.less` to see how you can use themes to override bootstrap variables. The darkly theme was taken straight from [bootswatch.com](http://bootswatch.com/).
 
 This package also contains site-wide templates including `layout, navigation, etc`. Basically things that are considered general, app-wide templates. Remember that, with packages, exports must be explicit, so if you add a new view you must add it to the package.js file in the layouts package so it can be seen by the rest of the app. 
 
