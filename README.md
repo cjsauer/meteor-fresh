@@ -22,6 +22,10 @@ This package also contains site-wide templates including `layout, navigation, et
 
 This package configures the routes of the application. It uses the [iron:router](https://github.com/iron-meteor/iron-router) package. Meteor Fresh comes with only the homepage route configured, which is setup to render the homepage view in the layouts package. 
 
+### app:homepage
+
+It's in the name: the homepage template and less file. 
+
 ## Adding Packages
 
 The `meteor` command line tool makes creating new packages easy. Just run `meteor create --package <package-name>` to get started adding a new package. 
