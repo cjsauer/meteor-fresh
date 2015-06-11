@@ -7,9 +7,7 @@ Package.onUse(function(api) {
 
   api.use([
     'less',
-    'templating',
-    'spacebars',
-    'blaze'
+    'templating'
   ], 'client');
 
   api.addFiles('home.less', 'client');
@@ -19,6 +17,7 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use([
     'jquery',
+    'blaze',
     'app:homepage',
     'tinytest@1.0.0'
   ], 'client');
