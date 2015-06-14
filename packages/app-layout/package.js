@@ -22,8 +22,6 @@ Package.onUse(function(api) {
     'navigation'
   ];
 
-  api.addFiles('vendor/bootstrap/js/bootstrap.min.js', 'client');
-  api.addFiles('theme.bootstrap.less', 'client');
   views.forEach(function(view) {
     api.addFiles('views/' + view + '.html', 'client');
   });
