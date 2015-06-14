@@ -12,4 +12,4 @@ app:homepage
 app:routes
 iron:router
 velocity:html-reporter
-sanjo:jasmine@0.13.7
+sanjo:jasmine
