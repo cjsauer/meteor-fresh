@@ -10,3 +10,6 @@ less
 app:layout
 app:homepage
 app:routes
+iron:router
+velocity:html-reporter
+sanjo:jasmine

@@ -26,6 +26,14 @@ This package configures the routes of the application. It uses the [iron:router]
 
 The `meteor` command line tool makes creating new packages easy. Just run `meteor create --package <package-name>` to get started adding a new package. 
 
+## Testing
+
+Are you testing? *Audience nods their heads*
+
+Meteor Fresh comes with [sanjo:jasmine](https://github.com/Sanjo/meteor-jasmine) and the [velocity:html-reporter](https://github.com/meteor-velocity/velocity#reporters) for testing. There is a sample test for the homepage in the `tests/` folder. You'll notice a remote browser automatically open and run the homepage test. You can just keep this minimized in the background. Check out the [github page](https://github.com/Sanjo/meteor-jasmine) for more info. 
+
+If this isn't your cup of tea you can remove testing using `meteor remove sanjo:jasmine velocity:html-reporter` and then `rm -r tests/`. 
+
 ## Contributing
 
 I am still learning the package structure of Meteor apps myself, so if you have any improvements or ideas, please open a pull request! I'd be glad to incorporate any enhancements. Please create a new branch for your work. 

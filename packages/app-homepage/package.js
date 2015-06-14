@@ -7,8 +7,7 @@ Package.onUse(function(api) {
 
   api.use([
     'less',
-    'templating',
-    'spacebars'
+    'templating'
   ], 'client');
 
   api.addFiles('home.less', 'client');
