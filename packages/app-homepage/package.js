@@ -13,13 +13,3 @@ Package.onUse(function(api) {
   api.addFiles('home.less', 'client');
   api.addFiles('home.html', 'client');
 });
-
-Package.onTest(function(api) {
-  api.use([
-    'jquery',
-    'blaze',
-    'app:homepage',
-    'tinytest@1.0.0'
-  ], 'client');
-  api.addFiles('app-homepage-test.js', 'client');
-});
