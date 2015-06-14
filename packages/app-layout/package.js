@@ -10,7 +10,6 @@ Package.onUse(function(api) {
   api.use([
     'templating',
     'spacebars',
-    'jquery',
     'less'
   ], 'client');
 
