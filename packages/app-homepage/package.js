@@ -17,7 +17,6 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use([
     'jquery',
-    'blaze',
     'app:homepage',
     'tinytest@1.0.0',
     'test-helpers'
