@@ -19,7 +19,8 @@ Package.onTest(function(api) {
     'jquery',
     'blaze',
     'app:homepage',
-    'tinytest@1.0.0'
+    'tinytest@1.0.0',
+    'test-helpers'
   ], 'client');
-  api.addFiles('app-homepage-test.js', 'client');
+  api.addFiles('home-test.js', 'client');
 });
