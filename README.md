@@ -30,10 +30,6 @@ A copy of the bootstrap CSS framework. We include our own copy of the bootstrap 
 
 \* Do not override the `@icon-font-path` or any other iconography variables. Those are already setup to point to the glyphicon fonts for you.  
 
-### app:homepage
-
-It's in the name: the homepage template and less file. 
-
 ## Adding Packages
 
 The `meteor` command line tool makes creating new packages easy. Just run `meteor create --package <package-name>` to get started adding a new package. 
