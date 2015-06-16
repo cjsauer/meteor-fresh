@@ -10,7 +10,6 @@ Package.onUse(function(api) {
   api.use([
     'templating',
     'spacebars',
-    'jquery',
     'less'
   ], 'client');
 
@@ -21,9 +20,6 @@ Package.onUse(function(api) {
     'layout',
     'navigation'
   ];
-
-  api.addFiles('vendor/bootstrap/js/bootstrap.min.js', 'client');
-  api.addFiles('theme.bootstrap.less', 'client');
   views.forEach(function(view) {
     api.addFiles('views/' + view + '.html', 'client');
   });
