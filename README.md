@@ -26,7 +26,9 @@ This package configures the routes of the application. It uses the [iron:router]
 
 ### app:bootstrap
 
-A copy of the bootstrap CSS framework. We include our own copy of the bootstrap source code so that it can be easily customized and extended. To extend/customize bootstrap, take a look first at the `theme.bootstrap.less` file. This file loads a file called `themes/darkly.less`, which was taken straight from [bootswatch.com](http://bootswatch.com). Less files like `darkly.less` override bootstrap less varialbes to give bootstrap a different look. Have a look at the [available bootstrap variables](http://getbootstrap.com/customize/#less-variables) for an idea of what is possible.  
+A copy of the bootstrap CSS framework. We include our own copy of the bootstrap source code so that it can be easily customized and extended. To extend/customize bootstrap, take a look first at the `theme.bootstrap.less` file. This file loads a file called `themes/darkly.less`, which was taken straight from [bootswatch.com](http://bootswatch.com)\*. Less files like `darkly.less` override bootstrap less varialbes to give bootstrap a different look. Have a look at the [available bootstrap variables](http://getbootstrap.com/customize/#less-variables) for an idea of what is possible.  
+
+\* Do not override the `@icon-font-path` or any other iconography variables. Those are already setup to point to the glyphicon fonts for you.  
 
 ## Adding Packages
 
