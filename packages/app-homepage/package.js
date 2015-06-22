@@ -13,7 +13,7 @@ Package.onUse(function(api) {
     'spacebars'
   ], 'client');
 
-  //Make sure the layout is loaded before us
+  // We're using the layout defined in app:layout
   api.use('app:layout');
 
   // Configure our routes

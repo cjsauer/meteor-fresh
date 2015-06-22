@@ -13,7 +13,7 @@ Package.onUse(function(api) {
     'less'
   ], 'client');
 
-  // Make sure bootstrap and themes are loaded before us
+  // Our layout will use bootstrap, along with our custom theme code defined in app:bootstrap
   api.use('app:bootstrap', 'client');
 
   // We configure the router to use this package's layout view as the layout
