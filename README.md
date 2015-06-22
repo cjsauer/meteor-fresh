@@ -16,13 +16,17 @@ You can find more information on this approach [at Mathieu Bouchard's blog post]
 
 This package deals with the overall look of the site and contains site-wide templates including `layout, navigation, sidebar, etc`. Basically things that are considered general, app-wide templates. Remember that, with packages, exports must be explicit, so if you add a new view (say, navigation.html) you must add it to the package.js file in the layouts package so it can be seen by the rest of the app.
 
+Packages that use this layout should `api.use('app:layout')` in their `package.js` file. In this way, you could potentially have more than one layout per app. 
+
+This package uses the `app:bootstrap` package.
+
 ### app:homepage
 
-Contains the html, less, and js files to serve up the homepage of the app. 
+Contains the html, less, and js files to serve up the homepage of the app. This package uses the `app:layout` package. 
 
 ### app:bootstrap
 
-A copy of the bootstrap CSS framework. We include our own copy of the bootstrap source code so that it can be easily customized and extended. To extend/customize bootstrap, take a look first at the `theme.bootstrap.less` file. This file loads a file called `themes/darkly.less`, which was taken straight from [bootswatch.com](http://bootswatch.com)\*. Less files like `darkly.less` override bootstrap less varialbes to give bootstrap a different look. Have a look at the [available bootstrap variables](http://getbootstrap.com/customize/#less-variables) for an idea of what is possible.  
+A copy of the bootstrap CSS framework. We include our own copy of the bootstrap source code so that it can be easily customized and extended. To extend/customize bootstrap, take a look first at the `theme.bootstrap.less` file. This file loads a file called `themes/darkly.less`, which was taken straight from [bootswatch.com](http://bootswatch.com)\*. Less files like `darkly.less` override bootstrap less varialbes to give bootstrap a different look. Have a look at the [available bootstrap variables](http://getbootstrap.com/customize/#less-variables) for an idea of what is possible. 
 
 \* Do not override the `@icon-font-path` or any other iconography variables. Those are already setup to point to the glyphicon fonts for you.  
 
