@@ -1,7 +1,6 @@
 app:bootstrap@0.0.0
 app:homepage@0.0.0
 app:layout@0.0.0
-app:routes@0.0.0
 autoupdate@1.2.1
 base64@1.0.3
 binary-heap@1.0.3

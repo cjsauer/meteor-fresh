@@ -13,7 +13,12 @@ Package.onUse(function(api) {
     'less'
   ], 'client');
 
+  // Make sure bootstrap and themes are loaded before us
+  api.use('app:bootstrap', 'client');
+
+  // We configure the router to use this package's layout view as the layout
   api.use('iron:router', both);
+  api.addFiles('lib/routes.js', both);
   
   //Add your views here!
   var views = [
