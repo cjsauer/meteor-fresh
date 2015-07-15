@@ -5,6 +5,8 @@ Package.describe({
 
 Package.onUse(function(api) {
 
+  api.versionsFrom('1.1.0.2');
+
   var both = ['client', 'server'];
 
   api.use([
@@ -17,7 +19,7 @@ Package.onUse(function(api) {
   api.use('app:layout');
 
   // Configure our routes
-  api.use('iron:router', both);
+  api.use('iron:router@1.0.9', both);
   api.addFiles('lib/routes.js', both);
 
   // Our homepage template and styling

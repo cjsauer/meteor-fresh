@@ -5,6 +5,8 @@ Package.describe({
 
 Package.onUse(function(api) {
 
+  api.versionsFrom('1.1.0.2');
+
   var both = ['client', 'server'];
 
   api.use([
@@ -17,7 +19,7 @@ Package.onUse(function(api) {
   api.use('app:bootstrap', 'client');
 
   // We configure the router to use this package's layout view as the layout
-  api.use('iron:router', both);
+  api.use('iron:router@1.0.9', both);
   api.addFiles('lib/routes.js', both);
   
   //Add your views here!

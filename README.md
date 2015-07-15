@@ -24,6 +24,8 @@ This package uses the `app:bootstrap` package.
 
 Contains the html, less, and js files to serve up the homepage of the app. This package uses the `app:layout` package. 
 
+**A note about less files:** in your package less files, if you need access to the variables defined in the layout, you must import them as a *reference* so that the generated CSS is not included multiple times, for example: `@import (reference) url('/packages/app-bootstrap/theme.bootstrap.less');`.
+
 ### app:bootstrap
 
 A copy of the bootstrap CSS framework. We include our own copy of the bootstrap source code so that it can be easily customized and extended. To extend/customize bootstrap, take a look first at the `theme.bootstrap.less` file. This file loads a file called `themes/darkly.less`, which was taken straight from [bootswatch.com](http://bootswatch.com)\*. Less files like `darkly.less` override bootstrap less varialbes to give bootstrap a different look. Have a look at the [available bootstrap variables](http://getbootstrap.com/customize/#less-variables) for an idea of what is possible. 
@@ -39,8 +41,10 @@ should be very easy to switch over to a different router package from the start.
 
 ## Adding Packages
 
-The `meteor` command line tool makes creating new packages easy. Just run `meteor create --package <package-name>` to get started adding a new package, and then configure its `package.js` file. More info about this file can be found (in the Meteor docs)[http://docs.meteor.com/#/full/packagejs]. An understanding of this file is *crucial* to a successful package-based project. I recommend a thorough readthrough of the entire (writing packages
-section)[http://docs.meteor.com/#/full/writingpackages].
+The `meteor` command line tool makes creating new packages easy. Just run `meteor create --package <package-name>` to get started adding a new package, and then configure its `package.js` file. You also have the option of using a tool called (package-kitchen)[https://github.com/chicagogrooves/meteor-package-kitchen] to do the heavy lifting of starting a new package. 
+
+More info about the `package.js` file can be found (in the Meteor docs)[http://docs.meteor.com/#/full/packagejs]. An understanding of this file is *crucial* to a successful package-based project. I recommend a thorough readthrough of the entire (writing packages
+section)[http://docs.meteor.com/#/full/writingpackages] as well as this (wonderful writeup)[http://themeteorchef.com/recipes/writing-a-package/] by Ryan Glover over at (themeteorchef.com)[http://themeteorchef.com].
 
 ## Contributing
 
