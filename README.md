@@ -24,6 +24,8 @@ This package uses the `app:bootstrap` package.
 
 Contains the html, less, and js files to serve up the homepage of the app. This package uses the `app:layout` package. 
 
+**A note about less files:** in your package less files, if you need access to the variables defined in the layout, you must import them as a *reference* so that the generated CSS is not included multiple times, for example: `@import (reference) url('/packages/app-bootstrap/theme.bootstrap.less');`.
+
 ### app:bootstrap
 
 A copy of the bootstrap CSS framework. We include our own copy of the bootstrap source code so that it can be easily customized and extended. To extend/customize bootstrap, take a look first at the `theme.bootstrap.less` file. This file loads a file called `themes/darkly.less`, which was taken straight from [bootswatch.com](http://bootswatch.com)\*. Less files like `darkly.less` override bootstrap less varialbes to give bootstrap a different look. Have a look at the [available bootstrap variables](http://getbootstrap.com/customize/#less-variables) for an idea of what is possible. 
