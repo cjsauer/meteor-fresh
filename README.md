@@ -41,10 +41,10 @@ should be very easy to switch over to a different router package from the start.
 
 ## Adding Packages
 
-The `meteor` command line tool makes creating new packages easy. Just run `meteor create --package <package-name>` to get started adding a new package, and then configure its `package.js` file. You also have the option of using a tool called (package-kitchen)[https://github.com/chicagogrooves/meteor-package-kitchen] to do the heavy lifting of starting a new package. 
+The `meteor` command line tool makes creating new packages easy. Just run `meteor create --package <package-name>` to get started adding a new package, and then configure its `package.js` file. You also have the option of using a tool called [package-kitchen](https://github.com/chicagogrooves/meteor-package-kitchen) to do the heavy lifting of starting a new package. 
 
-More info about the `package.js` file can be found (in the Meteor docs)[http://docs.meteor.com/#/full/packagejs]. An understanding of this file is *crucial* to a successful package-based project. I recommend a thorough readthrough of the entire (writing packages
-section)[http://docs.meteor.com/#/full/writingpackages] as well as this (wonderful writeup)[http://themeteorchef.com/recipes/writing-a-package/] by Ryan Glover over at (themeteorchef.com)[http://themeteorchef.com].
+More info about the `package.js` file can be found [in the Meteor docs](http://docs.meteor.com/#/full/packagejs). An understanding of this file is *crucial* to a successful package-based project. I recommend a thorough readthrough of the entire [writing packages
+section](http://docs.meteor.com/#/full/writingpackages) as well as this [wonderful writeup](http://themeteorchef.com/recipes/writing-a-package/) by Ryan Glover over at [themeteorchef.com](http://themeteorchef.com).
 
 ## Contributing
 
